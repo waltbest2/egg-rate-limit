@@ -1,0 +1,44 @@
+{
+  "REQ": [{
+    "url": ["/test", "^/testurl/.*$"],
+    "respTime": null,
+    "interval": 1,
+    "threshold": 20,
+    "domain": "support.myhost.com",
+    "alarm": {
+      "threshold": "80,50"
+    },
+    "dynamic": {
+      "type": "cpu",
+      "data": {
+        "maxResource": 0.6,
+        "minWal": 5,
+        "minResource": 0.2,
+        "maxWal": 20
+      }
+    }
+  },{
+    "url": ["@/test"],
+    "respTime": null,
+    "interval": 1,
+    "threshold": 20,
+    "alarm": {
+      "threshold": "80,50"
+    },
+    "dynamic": {
+      "type": "cpu",
+      "data": {
+        "maxResource": 0.6,
+        "minWal": 5,
+        "minResource": 0.2,
+        "maxWal": 20
+      }
+    }
+  }],
+  "ITF": [{
+    "url": ["/test"],
+    "respTime": null,
+    "interval": 1,
+    "threshold": 10
+  }]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "egg-rate-limit",
+  "version": "1.0.0",
+  "description": "request rate limit in eggjs",
+  "keywords": [
+    "egg",
+    "node",
+    "egg-plugin"
+  ],
+  "eggPlugin": {
+    "name": "rate-limit"
+  },
+  "egg": {
+    "typescript": true,
+    "declarations": true
+  },
+  "scripts": {
+    "build": "ets && tsc -p tsconfig.json",
+    "test": "egg-bin test -r egg-ts-helper/register"
+  },
+  "overrides": {
+    "@types/express-serve-static-core": "4.17.30",
+    "@types/koa": "2.13.6",
+    "@types/express": "4.17.14"
+  },
+  "devDependencies": {
+    "@types/mocha": "7.0.2",
+    "@types/node": "17.0.13",
+    "@types/supertest": "2.0.9",
+    "@typescript-eslint/eslint-plugin": "5.36.1",
+    "@typescript-eslint/parser": "5.36.1",
+    "autod": "3.1.0",
+    "egg": "2.34.0",
+    "egg-bin": "4.15.0",
+    "egg-ci": "1.13.0",
+    "egg-mock": "3.25.1",
+    "egg-ts-helper": "1.25.8",
+    "eslint": "7.32.0",
+    "tslib": "2.6.2",
+    "typescript": "3.9.7"
+  },
+  "author": "wuqi",
+  "license": "MIT"
+}
