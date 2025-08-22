@@ -87,7 +87,7 @@ export class TokenBucketImpl extends TokenBucketBase implements FlowCalculator {
         extraTime,
       }
     } else {
-      newThreshold = this.getExtraThreshold(time, extraTime);
+      newThreshold = this.getExactThreshold(time, extraTime);
     }
 
     return {
@@ -102,7 +102,7 @@ export class TokenBucketImpl extends TokenBucketBase implements FlowCalculator {
    * @param extraTime 
    * @returns 
    */
-  private getExtraThreshold(time: number, extraTime: number): {extraTime: number, avaNum: number} {
+  private getExactThreshold(time: number, extraTime: number): {extraTime: number, avaNum: number} {
     const data = parseFloat((time / this.interval / 1000 * this.threshold).toFixed(16)) + extraTime;
     const result = Math.floor(data);
 

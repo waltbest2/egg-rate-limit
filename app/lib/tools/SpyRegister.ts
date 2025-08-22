@@ -15,7 +15,7 @@ export class SpyRegister {
     this.itfSpyList = itfSpyList;
     this.reqSpyList = reqSpyList;
     this.spyEvents = spyEvents;
-    this.spyConfig = this.parseConfig(config);
+    this.parseConfig(config);
   }
 
   public init() {

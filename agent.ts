@@ -18,6 +18,10 @@ export default class Agent {
     this.agent.logger.info('[egg-rate-limit] agent didLoad');
   }
 
+  async willReady() {
+    this.agent.logger.info('[egg-rate-limit] agent willReady');
+  }
+
   async didReady() {
     this.agent.logger.info('[egg-rate-limit] agent didReady');
   }

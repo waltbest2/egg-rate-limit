@@ -4,7 +4,7 @@ import fs from 'fs';
 import { SpyRegister } from "./app/lib/tools/SpyRegister";
 import { InterfaceMonitor } from "./app/lib/tools/InterfaceMonitor";
 
-export default class AppBookHook {
+export default class AppBootHook {
   private app: Application;
 
   constructor(app: Application) {

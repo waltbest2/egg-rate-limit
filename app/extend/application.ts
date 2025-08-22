@@ -1,3 +1,5 @@
+import { SpyEvent } from "../types/SpyEvent";
+
 /**
  * 检查是否存在
  * @param arr 
