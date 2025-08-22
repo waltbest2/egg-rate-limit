@@ -1,5 +1,5 @@
 {
-  "name": "egg-rate-limit",
+  "name": "egg-flow-limit",
   "version": "1.0.0",
   "description": "request rate limit in eggjs",
   "keywords": [
@@ -17,6 +17,10 @@
   "scripts": {
     "build": "ets && tsc -p tsconfig.json",
     "test": "egg-bin test -r egg-ts-helper/register"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/waltbest2/egg-rate-limit.git"
   },
   "overrides": {
     "@types/express-serve-static-core": "4.17.30",
